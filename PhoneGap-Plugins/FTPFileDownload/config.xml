@@ -1,0 +1,5 @@
+ 
+    <feature name="FTPDownload">
+        <param name="ios-package" value="FTPDownload" />
+    </feature>
+     

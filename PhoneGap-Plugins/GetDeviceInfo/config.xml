@@ -1,0 +1,5 @@
+ 
+    <feature name="DeviceId">
+        <param name="ios-package" value="DeviceId" />
+    </feature> 
+     
