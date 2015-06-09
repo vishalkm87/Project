@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>index</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"> 
+    		<link rel="stylesheet" href="css/main.css"> 
+    	</head>
+    	<body onload="init()">
+    		<!--application UI goes here-->
+    		 	<button class="alignHW capturePhoto" onclick="capturePhoto();">Capture Photo</button> <br>
+    		 	<button class="alignHW getPhoto" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br> 
+    			<img style="display:none;width:60px;height:60px;" id="smallImage" src="" /> 
+    		<table style="margin-top: 70px; margin-bottom: 50px">
+	            <tr><td><input class="alignHW directory_name" id="directory_name" type="text" placeholder="Enter folder name" /></td></tr>
+	            <tr><td><input class="alignHW file_name" id="file_name" type="text" placeholder="Enter file name" /></td></tr>
+	            <tr style="line-height: 50px"><td><input class="alignHW save_data" id="save_data" type="button" value="Save Data" /></td></tr>
+            </table> 
+			 
+			<input class="alignHW removeFile" type="button" value="Remove File" onclick="removeFile();return false;" />  
+			<img id="img1" src="" height="50px" width="50px" /> 
+			<div id="log"></div>
+			 
+			<button id="metadataFileButton">Get Test File Metadata</button> 
+			<button id="dirListingButton">Show Directory Contents</button>
+			 
+			<div id="content"></div> 
+			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+    		<script src="js/main.js"></script> 
+    		<script>
+    		(function () {
+				    if (!console) {
+				        console = {};
+				    }
+				    var old = console.log;
+				    var logger = document.getElementById('log');
+				    console.log = function (message) {
+				        if (typeof message == 'object') {
+				            logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
+				        } else {
+				            logger.innerHTML += message + '<br />';
+				        }
+				    }
+				})();
+			</script>
+    	</body>
+</html>

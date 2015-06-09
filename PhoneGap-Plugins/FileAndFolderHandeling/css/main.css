@@ -1,0 +1,43 @@
+ 
+body {
+	height: 460px;
+	margin: 0 auto;
+	width: 320px;
+	background-color: gray;
+}
+
+.alignHW{
+	width:300px;
+	height: 52px;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.capturePhoto{
+	 float:left;
+	 margin-top: 22px;
+}
+.getPhoto{
+	 float:right
+}
+.directory_name{
+	 
+}
+.file_name{
+	 
+}
+.load_data{
+	 
+}
+.save_data{
+	 
+}
+.removeFile {
+	 
+}
+.labelText{
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
