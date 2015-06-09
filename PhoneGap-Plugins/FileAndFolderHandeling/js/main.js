@@ -15,8 +15,7 @@ $(document).ready(function() {
     $('#save_data').click(function() { 
     	var directory_name = 'test';
         var file_name = '10987.png'; 
-        var img_data = imagePathPhotoLib; 
-        console.log('Directory :==>> ' + directory_name + '==>> File: ==>>' + file_name + '==>> Image Data:==>> ' + img_data); 
+        var img_data = imagePathPhotoLib;  
         saveImageToFileSystem(directory_name, file_name, img_data);
     }); 
     
