@@ -1,0 +1,5 @@
+ 
+    <feature name="FtpUpload">
+        <param name="ios-package" value="FtpUpload" />
+    </feature>
+    
