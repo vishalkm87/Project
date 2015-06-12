@@ -1,0 +1,3 @@
+<feature name="PDFUtilities">
+        <param name="ios-package" value="PDFUtilities" />
+</feature>
